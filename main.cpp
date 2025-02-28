@@ -1,6 +1,14 @@
 #include <iostream>
 using namespace std;
 
+void outputGaji(int gajilembur, int gajireguler, int totalGaji){
+	cout << "======== Rincian Gaji ========" << endl;
+	cout << "Gaji Reguler : Rp. " << gajireguler << endl;
+	cout << "Gaji Lembur  : Rp. " << gajilembur << endl;
+	cout << "Total Gaji   : Rp. " << totalGaji << endl;
+	cout << "==============================" << endl;
+}
+
 int main(){
 	
 	// variabel
@@ -46,11 +54,7 @@ int main(){
 	}
 	
 	// Output Gaji
-	cout << "======== Rincian Gaji ========" << endl;
-	cout << "Gaji Reguler : Rp. " << gajireguler << endl;
-	cout << "Gaji Lembur  : Rp. " << gajilembur << endl;
-	cout << "Total Gaji   : Rp. " << totalGaji << endl;
-	cout << "==============================" << endl;
+	outputGaji(gajilembur, gajireguler, totalGaji);
 	
 	return 0;
 }
