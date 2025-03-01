@@ -29,13 +29,18 @@ int main(){
 	cout << "==============" << endl;
 	cout << "Jabatan [1-3] : ";
 	cin >> jabatan;
+
+	if (jabatan < 1 || jabatan > 3){
+		cout << "Pilihan yang anda masukkan sedang tidak tersedia." << endl;
+		return 0;
+	}
+
 	cout << "Jam Kerja Reguler : ";
 	cin >> reguler;
 	cout << "Jam Kerja Lembur  : ";
 	cin >> lembur;
 	
 	cout << "\n" << endl;
-	
 	
 	if(jabatan == 1){
 		gajireguler = manajer * reguler;
@@ -49,8 +54,6 @@ int main(){
 		gajireguler = staff * reguler;
 		gajilembur = lembur * (staff * 1.5);
 		totalGaji = gajireguler + gajilembur;
-	}else{
-		cout << "Pilihan yang anda masukkan sedang tidak tersedia, Terimakasih" << endl;
 	}
 	
 	// Output Gaji
