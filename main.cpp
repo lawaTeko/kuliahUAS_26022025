@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
+// fungsi output gaji
 void outputGaji(int gajilembur, int gajireguler, int totalGaji){
 	cout << "======== Rincian Gaji ========" << endl;
 	cout << "Gaji Reguler : Rp. " << gajireguler << endl;
@@ -21,7 +22,8 @@ int main(){
 	cout << "======================================================" << endl;
 	cout << " PROGRAM PENGHITUNG GAJI KARYAWAN PT. Cerdas Sejahtera" << endl;
 	cout << "======================================================" << endl;
-	
+
+	// pilihan jabatan 
 	cout << "==============" << endl;
 	cout << "1. MANAJER" << endl;
 	cout << "2. SUPERVISOR" << endl;
@@ -30,6 +32,7 @@ int main(){
 	cout << "Jabatan [1-3] : ";
 	cin >> jabatan;
 
+	// verifikasi input
 	if (jabatan < 1 || jabatan > 3){
 		cout << "Pilihan yang anda masukkan sedang tidak tersedia." << endl;
 		return 0;
